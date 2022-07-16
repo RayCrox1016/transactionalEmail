@@ -1,0 +1,173 @@
+---
+layout: chewy-layout
+subject: My Email Templates
+---
+
+<container>
+  <row class="content-area">
+    <columns>
+      <row class="shopping-details">
+        <columns small="12" large="6" class="shopping-details_left">
+          <row>
+            <columns>
+              <span class="summary">SUMMARY:</span>
+            </columns>
+          </row>
+          <row>
+            <columns>
+              <span>Order #:</span>
+              <span>65006500</span>
+            </columns>
+          </row>
+          <row>
+            <columns>
+              <span>Order Date:</span>
+              <span>April 3, 2017</span>
+            </columns>
+          </row>
+          <row>
+            <columns>
+              <span>Order Total:</span>
+              <span>$49.35</span>
+            </columns>
+          </row>
+          <row>
+            <columns>
+              <span class="savings">You saved $12.69</span>
+            </columns>
+          </row>
+        </columns>
+
+        <columns small="12" large="6" class="shopping-details_right">
+          <row>
+            <columns>
+              <span class="summary">SHIPPING ADDRESS:</span>
+            </columns>
+          </row>
+          <row>
+            <columns>
+              <span>Smiles Davis</span>
+            </columns>
+          </row>
+          <row>
+            <columns>
+              <span>123 Somewhere Street</span>
+            </columns>
+          </row>
+          <row>
+            <columns>
+              <span>Somewhere, USA 650650</span>
+            </columns>
+          </row>
+        </columns>
+      </row>
+
+      <row class="items-heading show-for-large">
+        <columns class="items-heading-col">
+          <row>
+            <columns large="3"><p class="package">PACKAGE 1</p> </columns>
+            <columns large="6"><a>TRACK PACKAGE</a> </columns>
+            <columns large="2"><p>QTY</p> </columns>
+            <columns large="1"><p class="price">PRICE</p> </columns>
+          </row>
+        </columns>
+      </row>
+
+      {{#chewy.purchasedItems}}
+      <row class="item-row">
+        <columns class="item-row_col">
+          <row>
+            <columns large="3">
+              <center>
+                <img src="{{this.itemPic}}" alt="item pic" />
+              </center>
+            </columns>
+
+            <columns large="6">
+              <p class="small-text-center description-p">
+                {{this.description}}
+              </p>
+            </columns>
+            <columns small="6" large="2">
+              <p class="small-text-center hide-for-large quantity">QTY</p>
+              <p class="small-text-center">{{this.quantity}}</p>
+            </columns>
+            <columns small="6" large="1"
+              ><p class="small-text-center hide-for-large">Price</p>
+              <p class="small-text-center">${{this.price}}</p>
+            </columns>
+          </row>
+        </columns>
+      </row>
+      {{/chewy.purchasedItems}}
+
+      <row class="items-heading show-for-large">
+        <columns class="items-heading-col">
+          <row>
+            <columns large="3"><p class="package">PACKAGE 2</p> </columns>
+            <columns large="6"><a>TRACK PACKAGE</a> </columns>
+            <columns large="2"><p>QTY</p> </columns>
+            <columns large="1"><p class="price">PRICE</p> </columns>
+          </row>
+        </columns>
+      </row>
+
+      {{#chewy.purchasedItemsCont}}
+      <row class="item-row">
+        <columns class="item-row_col">
+          <row>
+            <columns large="3">
+              <center>
+                <img src="{{this.itemPic}}" alt="item pic" />
+              </center>
+            </columns>
+
+            <columns large="6">
+              <p class="small-text-center small-text-center">
+                {{this.description}}
+              </p>
+            </columns>
+            <columns small="6" large="2"
+              ><p class="small-text-center hide-for-large">QTY</p>
+              <p class="small-text-center">{{this.quantity}}</p>
+            </columns>
+            <columns small="6" large="1"
+              ><p class="small-text-center hide-for-large">Price</p>
+              <p class="small-text-center">${{this.price}}</p>
+            </columns>
+          </row>
+        </columns>
+      </row>
+      {{/chewy.purchasedItemsCont}}
+
+      <row class="totals-row">
+        <columns>
+          <row>
+            <columns class="total-headings" small="9" Large="10">
+              <p>Subtotal (5 Items):</p>
+
+              <p>Flat-Rate Shipping:</p>
+
+              <p>First Autoship Discount:</p>
+
+              <p>Autoship Discount:</p>
+
+              <p>Estimated tax:</p>
+
+              <p class="order-total">Order Total:</p>
+            </columns>
+
+            <columns class="all-totals" small="3" large="2">
+              <p>$62.04</p>
+              <p>FREE</p>
+              <p>-$12.34</p>
+              <p>-$0.35</p>
+              <p>$0.00</p>
+              <p>$49.35</p>
+            </columns>
+          </row>
+        </columns>
+      </row>
+    </columns>
+  </row>
+</container>

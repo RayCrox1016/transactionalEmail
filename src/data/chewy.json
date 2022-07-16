@@ -1,0 +1,37 @@
+{
+  "purchasedItems": [
+    {
+      "itemPic": "https://imgur.com/gcmWwCs.jpg",
+      "description": "Frisco Dog Poop bags + Dispenser, Scented, 15 count.",
+      "quantity": "1",
+      "price": "1.99"
+    },
+
+    {
+      "itemPic": "https://imgur.com/mkPhFg3.jpg",
+      "description": "Frisco Curved Triple Feeder Stainless Steel Dog & Cat Bowl.",
+      "quantity": "3",
+      "price": "11.83"
+    },
+    {
+      "itemPic": "https://imgur.com/g89EKCn.jpg",
+      "description": "Frisco Plush with Rope Squeaking Monkey Dog Toy.",
+      "quantity": "1",
+      "price": "8.05"
+    },
+    {
+      "itemPic": "https://imgur.com/QULBE4v.jpg",
+      "description": "Frisco Refill Dog Poop Bags.",
+      "quantity": "1",
+      "price": "1.99"
+    }
+  ],
+  "purchasedItemsCont": [
+    {
+      "itemPic": "https://imgur.com/zLeZhVs.jpg",
+      "description": "Frisco Fold & Carry Double Door Collapsible Wire Dog Crate.",
+      "quantity": "1",
+      "price": "74.99"
+    }
+  ]
+}
